@@ -88,34 +88,26 @@ Backend runs on [http://localhost:5000](http://localhost:5000)
 * If the IP is authorized → attendance is recorded.
 * If not → request is rejected with a `403 Forbidden`.
 
-## 📡 API Endpoints (Basic)
-
-### Auth
-
-* `POST /api/auth/register` → Register new user
-* `POST /api/auth/login` → Login and receive JWT
-
-### Attendance
-
-* `POST /api/attendance/mark` → Mark attendance (only from allowed IP)
-* `GET /api/attendance/me` → Get current user’s attendance records
-
 ## 🗄️ Database Models
 
 ### User.js
 
+* `employeeId`
 * `name`
+* `password`
+* `address` (admin/employee)
 * `email`
-* `passwordHash`
-* `role` (admin/employee)
-
+* `mobile`
+* `dob`
+* `department`
+* `role`
+  
 ### Attendance.js
 
-* `user`
+* `employeeId`
 * `date`
 * `time`
 * `ip`
-* `userAgent`
 
 ## 🔒 Security Notes
 
@@ -131,6 +123,3 @@ Backend runs on [http://localhost:5000](http://localhost:5000)
 
 ##
 
----
-
-✅ Now your README matches your project (`client/` + `server/` + IP validation with `localIPMap.json`).
