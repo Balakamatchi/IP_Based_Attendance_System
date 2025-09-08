@@ -95,7 +95,7 @@ Backend runs on [http://localhost:5000](http://localhost:5000)
 * `employeeId`
 * `name`
 * `password`
-* `address` (admin/employee)
+* `address` 
 * `email`
 * `mobile`
 * `dob`
