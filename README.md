@@ -1,8 +1,6 @@
 # IP_Based_Attendance_System
 A secure MERN-based attendance system with IP validation to prevent proxy logins.
 
-**A secure MERN-based attendance system with IP validation to prevent proxy/VPN logins.**
-
 ---
 
 ## 📌 Project Overview
